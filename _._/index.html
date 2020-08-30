@@ -13,25 +13,25 @@
 	<title>Tytuł</title>
 </head>
 <body>
-		<header>
-			<div class="main_container">
-				<div id="logo">
-					<img src="./images/logo.png" width="90px" height="90px" alt="Logo">
-				</div>
-				<h1 id="title">Studio wnętrz - Agnieszka Brol</h1>
-				<nav id="menu_position">
-					<ul id="menu">
-						<li><a href="./index.html">O mnie</a></li>
-						<li><a href="./subpages/wizualizacje.html">Wizualizacje</a></li>
-						<li><a href="#">Nowości</a></li>
-						<li><a href="#">Kontakt</a></li>
-						<li><a href="https://www.facebook.com/ABLstudiownetrz"><i class="fa fa-facebook-official" style="font-size:36px" id="fb"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<header>
 		<div class="main_container">
-			<div id="zdj"></div>
+			<div id="logo">
+				<img src="./images/logo.png" width="90px" height="90px" alt="Logo">
+			</div>
+			<h1 id="title">Studio wnętrz - Agnieszka Brol</h1>
+			<nav id="menu_position">
+				<ul id="menu">
+					<li><a href="./index.html">O mnie</a></li>
+					<li><a href="./subpages/wizualizacje.html">Wizualizacje</a></li>
+					<li><a href="#">Nowości</a></li>
+					<li><a href="#">Kontakt</a></li>
+					<li><a href="https://www.facebook.com/ABLstudiownetrz"><i class="fa fa-facebook-official" style="font-size:36px" id="fb"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="main_container">
+		<div id="zdj"></div>
 			<script>
 					function photo_changer(){
 						//Tutaj dodawać zdjecia
@@ -62,7 +62,7 @@
 						}
 						next_photo();
 						//Tutaj ustawić czas trwania interwału i zmianić w stylach css
-						setInterval(next_photo, 8000);
+						setInterval(next_photo, 5000);
 					}
 					photo_changer();
 				</script>
