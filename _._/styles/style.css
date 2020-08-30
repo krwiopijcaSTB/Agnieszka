@@ -1,0 +1,165 @@
+*{
+    font-family: Lato;
+}
+
+body{
+    margin: 0;
+}
+
+.main_container{
+    min-width: 400px;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.main_container p{
+    padding-top: 10px;
+}
+
+header{
+    min-width: 400px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px #000000;
+    position: relative;
+    z-index: 2;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#title{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+#menu_position{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    width: auto;
+}
+
+#menu{
+    list-style-type: none;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+#menu li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#menu li a{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#fb{
+    padding-top: 5px;
+}
+
+/*div.break{
+    min-width: 400px;
+    max-width: 1400px;
+    height: 100px;
+    background-color: #f2e6d9;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 5px #996633;
+}*/
+
+.visible_photo{
+    animation: animation 8s;
+    margin: auto;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#zdj{
+    width: 1200px;
+    height: 675px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+h2{
+    padding-top: 32px;
+}
+
+#last_break{
+    height: auto;
+}
+
+#contact{
+    display: block;
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.visualization{
+    width: 350px;
+    height: auto;
+    float: left;
+    margin: calc(150px / 6);
+}
+
+.small_box{
+    width: 350px;
+    height: 250px;
+    transition: 0.3s;
+}
+
+.medium_box{
+    width: 350px;
+    height: 500px;
+    transition: 0.3s;
+}
+
+.big_box{
+    width: 350px;
+    height: 750px;
+    transition: 0.3s;
+}
+
+.box{
+    margin-top: 25px;
+    border: 1px solid #C0C0C0;
+}
+
+.box:hover{
+    box-shadow: 0 0 5px #000000;
+    transition: 0.3s;
+    border-color: #000000;
+}
