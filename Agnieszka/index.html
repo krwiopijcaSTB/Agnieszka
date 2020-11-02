@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<meta charset="UTF-8">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 400px)" href="./styles/style360px.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<title>Tytuł</title>
+</head>
+<body>
+	<header>
+		<div class="main_container">
+			<div id="logo">
+				<img src="./images/logo.png" width="90px" height="90px" alt="Logo">
+			</div>
+			<h1 id="title">Studio wnętrz - Agnieszka Brol</h1>
+			<nav id="menu_position">
+				<ul id="menu">
+					<li><a href="./index.html">O mnie</a></li>
+					<li><a href="./subpages/wizualizacje.html">Wizualizacje</a></li>
+					<li><a href="./subpages/kontakt.html">Kontakt</a></li>
+					<li><a href="https://www.facebook.com/ABLstudiownetrz"><i class="fa fa-facebook-official" style="font-size:36px" id="fb"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="main_container">
+		<div id="zdj"></div>
+			<script>
+					function photo_changer(){
+						//Tutaj dodawać zdjecia
+
+						// if(screen.width >= 0 || screen.width <= 400) {
+						// 	console.log("jebacPIS");
+							const photos = [
+								"./images/wizualizacje/wizualizacja1.png",
+								"./images/wizualizacje/wizualizacja2.png",
+								"./images/wizualizacje/wizualizacja3.png",
+								"./images/wizualizacje/wizualizacja4.png",
+								"./images/wizualizacje/wizualizacja5.png",
+							];
+						// }
+						let i = 0;
+						let x = 0;
+						function next_photo() {
+							if(x > 0){
+								document.getElementById("last_photo").parentNode.removeChild(document.getElementById("last_photo"));
+							}
+							let current_photo = document.createElement("img");
+							current_photo.setAttribute("src", photos[i]);
+							current_photo.className = "visible_photo";
+							current_photo.id = "last_photo";
+							document.getElementById("zdj").appendChild(current_photo);
+							i++;
+							x++;
+							if(i >= photos.length){
+								i = 0;
+							}
+						}
+						next_photo();
+						//Tutaj ustawić czas trwania interwału i zmianić w stylach css
+						setInterval(next_photo, 5000);
+					}
+					photo_changer();
+				</script>
+		</div>
+		<div class="main_container">
+			<h2>Tytuł</h2>
+		</div>
+	<div class="main_container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis enim arcu. Praesent ut lectus euismod, gravida orci a, rhoncus ipsum. Etiam tristique pellentesque ex sed scelerisque. Integer vel tellus vel dui lacinia venenatis. Phasellus dignissim interdum aliquam. Aliquam ac odio sed arcu ultrices cursus eu ut ligula. Nam eget posuere quam, in congue justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque nec dapibus turpis, a maximus nunc. Vivamus nisl nisl, vehicula sed hendrerit sed, consequat nec sem. Sed facilisis accumsan enim, vitae mollis libero vestibulum id. Proin pulvinar nisi ligula, ac ornare libero finibus in. Proin eget ligula in enim finibus mollis. Nulla ac pellentesque enim. Donec auctor eros urna, ac maximus arcu euismod eu.</p>
+	</div>
+	<div id="last_break">
+		<div class="main_container">
+			<div id="contact">
+				Dane kontaktowe<br>Dane kontaktowe<br>Dane kontaktowe
+			</div>
+		</div>
+	</div>
+</body>
+</html>
