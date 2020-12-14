@@ -1,0 +1,195 @@
+*{
+    font-family: Lato;
+}
+
+body{
+    margin: 0;
+}
+
+.main_container{
+    min-width: 400px;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.main_container p{
+    margin: auto;
+    text-align: justify;
+    width: 95%;
+    padding: 10px;
+}
+
+header{
+    min-width: 400px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #000000;
+    position: relative;
+    z-index: 2;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#title{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+#menu_position{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    width: auto;
+}
+
+#menu{
+    list-style-type: none;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+#menu li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#menu li a{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#fb{
+    padding-top: 5px;
+    color: black;
+}
+
+.visible_photo{
+    animation: animation 5s;
+    margin: auto;
+    box-shadow: 0 0 10px #000000;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#zdj{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#zdj img{
+    width: 100%;
+}
+
+h2{
+    padding-top: 32px;
+}
+
+#last_break{
+    height: auto;
+}
+
+#visual_container{
+    min-width: 600px;
+    max-width: 1200px;
+    margin-left: calc(100%/2 - 600px/2);
+}
+
+.visualisation{
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 168.75px;
+    max-height: 337.5px;
+    float: left;
+}
+
+.visualisation img{
+    width: 300px;
+    height: 168.75px;
+    float: left;
+}
+
+.visualisation h2{
+    height: 168.75px;
+    width: 300px;
+    float: left;
+    padding-left: 5px;
+    font-size: 24px;
+    padding-top: 63px;
+    margin-bottom: 0;
+}
+
+a > div{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    float: left;
+}
+
+a > div:hover{
+    background-color: #e6e6e6;
+    transition: 0.3s;
+}
+
+#album_title{
+    float: left;
+    padding-top: 5px;
+}
+
+#album_link{
+    float: right;
+    margin-top: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+
+h3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#contact_table{
+    margin: auto;
+    padding-top: 20px;
+}
+
+#contact_table tr td{
+    width: 200px;
+}
+
+#contact_content{
+    padding-top: 10%;
+}
+
+.title{
+    padding-left: 30px;
+}
